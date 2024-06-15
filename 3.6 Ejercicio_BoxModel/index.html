@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model</title>
+  <style>
+    div {
+      width: 200px; 
+      height: 200px; 
+      margin-bottom: 20px; 
+      box-sizing: border-box; 
+    }
+
+    /* Primer div */
+    div:nth-of-type(1) {
+      background-color: rgb(89, 230, 28); 
+      padding: 20px; 
+      border: 10px solid black; 
+    }
+
+    /* Párrafo dentro del primer div */
+    div:nth-of-type(1) p {
+      margin: 0; 
+    }
+
+    /* Segundo div */
+    div:nth-of-type(2) {
+      background-color: orange; 
+      border-top: 20px solid black; 
+      border-bottom: 20px solid black; 
+      padding: 10px; 
+      margin-left: 260px; 
+    }
+
+    /* Tercer div */
+    div:nth-of-type(3) {
+      background-color: rgb(236, 53, 236); 
+      border: 10px solid black; 
+      margin-left: 40px; 
+    }
+  </style>
+</head>
+<body>
+  <!-- Tareas:
+1. Crear 3 cajas usando el elemento div.
+2. Asigna el tamaño de cada caja en 200px para el alto y ancho.
+3. Asigna un color de fondo diferente a cada caja.
+4. Agrega un elemento párrafo que contenga un Lorem de 40 palabras dentro de la primera caja.
+5. Asigna al primer div un padding de 20px para alrededor con un borde de color negro de 10px.
+6. Ajusta el estilo del elemento párrafo para remover todos los margenes.
+7. Ajusta el segundo div con un borde superior e inferior de 20px, y 10px de izquierda y derecha; Asigna un estilo margin-left: 260px
+8. Ajusta el tercer div con un borde de 10px. Asigna un estilo margin-left: 40px
+-->
+<div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec nulla eu felis tristique maximus ut vitae lacus. Nullam id tortor eget est elementum venenatis vel at mauris.</p>
+</div>
+<div></div>
+<div></div>
+</body>
+
+</html>
